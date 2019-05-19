@@ -20,6 +20,7 @@
 
 ## What's Work?
 - Power Management, idle @700-900MHz
+- Shutdown, Restart, Sleep
 - QE/CI Intel HD 520
 - Brightness
 - Battery up to 5 hours
