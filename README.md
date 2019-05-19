@@ -38,6 +38,8 @@
 - Nvidia MX130 (Optimus)
 - Combo Jack Microphone
 - SD Card reader
+- Facetime, iMessage
+- etc.
 
 ## What's Disabled?
 - Nvidia MX130, disabled with DSDT
