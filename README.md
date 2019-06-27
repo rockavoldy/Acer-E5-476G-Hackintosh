@@ -20,6 +20,7 @@
 
 ## What's Work?
 - Power Management, idle @700-900MHz
+- Shutdown, Restart, Sleep
 - QE/CI Intel HD 520
 - Brightness
 - Battery up to 5 hours
@@ -38,6 +39,8 @@
 - Nvidia MX130 (Optimus)
 - Combo Jack Microphone
 - SD Card reader
+- Facetime, iMessage
+- etc.
 
 ## What's Disabled?
 - Nvidia MX130, disabled with DSDT
