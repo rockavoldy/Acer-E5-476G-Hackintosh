@@ -8,14 +8,10 @@
 		<true/>
 		<key>DSDT</key>
 		<dict>
-			<key>DropOEM_DSM</key>
-			<false/>
 			<key>Fixes</key>
 			<dict>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FixAirport</key>
-				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -71,20 +67,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change EC0 to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUMwXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<false/>
@@ -97,63 +79,32 @@
 					SU1FSQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EC0 to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
 			</array>
 		</dict>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>ApIst</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Cst</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>ApCst</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Hwp</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>ApHwp</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>HwpLvt</string>
-			</dict>
-		</array>
-		<key>FixHeaders</key>
-		<true/>
-		<key>PatchAPIC</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
 				<key>PluginType</key>
 				<true/>
 			</dict>
@@ -163,8 +114,6 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>brcmfx-country=ID</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -175,21 +124,15 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>1</integer>
-		<key>XMPDetection</key>
-		<string>Yes</string>
 	</dict>
 	<key>Comment</key>
 	<string>Acer E5-476G by rockavoldy</string>
 	<key>Devices</key>
 	<dict>
-		<key>AddProperties</key>
-		<array/>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
 			<string>Detect</string>
-			<key>ResetHDA</key>
-			<false/>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -260,6 +203,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@3,0,0</string>
+				<key>brcmfx-country</key>
+				<string>ID</string>
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
@@ -283,15 +228,6 @@
 				<key>model</key>
 				<string>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>ISA bridge</string>
-				<key>model</key>
-				<string>Sunrise Point-LP LPC Controller</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -310,23 +246,16 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<data>
-				AwAAAA==
-				</data>
+				<integer>28</integer>
 				<key>model</key>
-				<string>Sunrise Point-LP HD Audio</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x4)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>SMBus</string>
-				<key>model</key>
-				<string>Sunrise Point-LP SMBus</string>
+				<string>Realtek ALC255 HD Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
 				AAAWGQ==
@@ -335,10 +264,6 @@
 				<string>Internal</string>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
-				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
-				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
 				AACQAA==
@@ -360,7 +285,7 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
@@ -407,6 +332,8 @@
 			<key>Tool</key>
 			<false/>
 		</dict>
+		<key>Theme</key>
+		<string>random</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -434,8 +361,6 @@
 		<true/>
 		<key>KernelToPatch</key>
 		<array/>
-		<key>KernelXCPM</key>
-		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -481,96 +406,58 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
+		<string>0x00</string>
 		<key>MLB</key>
-		<string>YM0SG4ZWGVC1</string>
+		<string>0</string>
 		<key>ROM</key>
-		<string>UseMacAddr1</string>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>12/19/2018</string>
+		<string>04/11/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP131.88Z.F000.B00.1812191047</string>
+		<string>MBA71.88Z.F000.B00.1904111401</string>
 		<key>Board-ID</key>
-		<string>Mac-473D31EABEB93F9B</string>
+		<string>Mac-937CB26E2E02BB01</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>YM0639902GUHMHK8C</string>
+		<string>0</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>Air-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>229.0.0.0.0</string>
+		<string>186.0.0.0.0</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook Air</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xE00FE137</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Memory</key>
-		<dict>
-			<key>Modules</key>
-			<array>
-				<dict>
-					<key>Frequency</key>
-					<integer>2400</integer>
-					<key>Part</key>
-					<string>TEAMGROUP-SD4-2400</string>
-					<key>Serial</key>
-					<string>000100040E0E0500</string>
-					<key>Size</key>
-					<integer>4096</integer>
-					<key>Slot</key>
-					<integer>0</integer>
-					<key>Type</key>
-					<string>DDR4</string>
-					<key>Vendor</key>
-					<string>Team Group</string>
-				</dict>
-				<dict>
-					<key>Frequency</key>
-					<integer>2400</integer>
-					<key>Part</key>
-					<string>HMA851S6AFR6N-UH</string>
-					<key>Serial</key>
-					<string>020A000F090A000B</string>
-					<key>Size</key>
-					<integer>4096</integer>
-					<key>Slot</key>
-					<integer>2</integer>
-					<key>Type</key>
-					<string>DDR4</string>
-					<key>Vendor</key>
-					<string>SK Hynix</string>
-				</dict>
-			</array>
-		</dict>
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x1A</string>
+		<string>0xFFFF</string>
 		<key>ProductName</key>
-		<string>MacBookPro13,1</string>
+		<string>MacBookAir7,2</string>
 		<key>SerialNumber</key>
-		<string>YM0SG4ZWGVC1</string>
+		<string>0</string>
 		<key>SmUUID</key>
-		<string>E90F69B9-E987-41A3-B537-9ADA66873C9D</string>
+		<string>0</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>

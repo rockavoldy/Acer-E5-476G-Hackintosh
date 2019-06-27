@@ -5,18 +5,18 @@
  * 
  * Disassembling to non-symbolic legacy ASL operators
  *
- * Disassembly of DSDT.aml, Tue May 14 01:35:54 2019
+ * Disassembly of DSDT.aml, Fri Jun 21 00:37:33 2019
  *
  * Original Table Header:
  *     Signature        "DSDT"
- *     Length           0x0001A265 (107109)
+ *     Length           0x0001A0FA (106746)
  *     Revision         0x02
- *     Checksum         0xFC
+ *     Checksum         0xC2
  *     OEM ID           "ACRSYS"
  *     OEM Table ID     "ACRPRDCT"
  *     OEM Revision     0x00000000 (0)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler ID      "1025"
+ *     Compiler Version 0x00040000 (262144)
  */
 DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 {
@@ -45,36 +45,36 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
     External (_PR_.PKGA, UnknownObj)    // (from opcode)
     External (_PR_.TRPD, UnknownObj)    // (from opcode)
     External (_PR_.TRPF, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.AINT, MethodObj)    // 2 Arguments (from opcode)
-    External (_SB_.PCI0.IGPU.ALSI, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM0, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM1, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM2, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM3, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM4, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM5, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM6, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM7, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM8, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLM9, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLMA, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.BLMX, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.CBLV, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.CDCK, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.CLID, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.DD1F, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.GHDS, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.PCI0.IGPU.GSCI, MethodObj)    // 0 Arguments (from opcode)
-    External (_SB_.PCI0.IGPU.GSSE, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.STAT, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.TCHE, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.HDEF.PPMS, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.PCI0.HDEF.PS0X, MethodObj)    // 0 Arguments (from opcode)
-    External (_SB_.PCI0.HDEF.PS3X, MethodObj)    // 0 Arguments (from opcode)
+    External (_SB_.PCI0.GFX0, DeviceObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.AINT, MethodObj)    // 2 Arguments (from opcode)
+    External (_SB_.PCI0.GFX0.ALSI, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM0, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM1, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM2, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM3, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM4, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM5, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM6, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM7, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM8, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLM9, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLMA, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.BLMX, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.CBLV, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.CDCK, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.CLID, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.GFX0.DD1F, DeviceObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.GHDS, MethodObj)    // 1 Arguments (from opcode)
+    External (_SB_.PCI0.GFX0.GSCI, MethodObj)    // 0 Arguments (from opcode)
+    External (_SB_.PCI0.GFX0.GSSE, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.STAT, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.GFX0.TCHE, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.HDAS.PPMS, MethodObj)    // 1 Arguments (from opcode)
+    External (_SB_.PCI0.HDAS.PS0X, MethodObj)    // 0 Arguments (from opcode)
+    External (_SB_.PCI0.HDAS.PS3X, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.HIDW, MethodObj)    // 4 Arguments (from opcode)
     External (_SB_.PCI0.HIWC, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.PCI0.LPCB.EC__.XDAT, MethodObj)    // 0 Arguments (from opcode)
+    External (_SB_.PCI0.LPCB.H_EC.XDAT, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PAUD.PUAM, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PEG0, DeviceObj)    // (from opcode)
     External (_SB_.PCI0.PEG0.HPME, MethodObj)    // 0 Arguments (from opcode)
@@ -83,21 +83,20 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
     External (_SB_.PCI0.PEG1.HPME, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PEG2, DeviceObj)    // (from opcode)
     External (_SB_.PCI0.PEG2.HPME, MethodObj)    // 0 Arguments (from opcode)
-    External (_SB_.PCI0.RP05.PWRG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP05.RSTG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP05.SCLK, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP09.PWRG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP09.RSTG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP09.SCLK, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP13.PWRG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP13.RSTG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP13.SCLK, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP17.PWRG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP17.RSTG, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.RP17.SCLK, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.SATA.SDSM, MethodObj)    // 4 Arguments (from opcode)
-    External (_SB_.PCI0.WMID, UnknownObj)    // Warning: Unknown object
-    External (_SB_.PCI0.WMID.FEBC, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.RP05.PWRG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP05.RSTG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP05.SCLK, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP09.PWRG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP09.RSTG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP09.SCLK, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP13.PWRG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP13.RSTG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP13.SCLK, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP17.PWRG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP17.RSTG, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.RP17.SCLK, UnknownObj)    // Warning: Unknown object
+    External (_SB_.PCI0.SAT0.SDSM, MethodObj)    // 4 Arguments (from opcode)
+    External (_SB_.PCI0.WMID.FEBC, UnknownObj)    // Warning: Unknown object
     External (_SB_.PCI0.XHC_.DUAM, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.XHC_.PS0X, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.XHC_.PS3X, MethodObj)    // 0 Arguments (from opcode)
@@ -110,7 +109,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
     External (_TZ_.TZ00, DeviceObj)    // (from opcode)
     External (_TZ_.TZ01, DeviceObj)    // (from opcode)
     External (ALSE, UnknownObj)    // (from opcode)
-    External (BNUM, UnknownObj)    // (from opcode)
+    External (BNUM, UnknownObj)    // (from opcode)    // Conflicts with a later declaration
     External (BRTL, UnknownObj)    // (from opcode)
     External (D1F0, UnknownObj)    // (from opcode)
     External (D1F1, UnknownObj)    // (from opcode)
@@ -153,9 +152,9 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
     External (RP17.PWRG, UnknownObj)    // (from opcode)
     External (RP17.RSTG, UnknownObj)    // (from opcode)
     External (RP17.SCLK, UnknownObj)    // (from opcode)
-    External (SATA.NVM1.VLPM, UnknownObj)    // (from opcode)
-    External (SATA.NVM2.VLPM, UnknownObj)    // (from opcode)
-    External (SATA.NVM3.VLPM, UnknownObj)    // (from opcode)
+    External (SAT0.NVM1.VLPM, UnknownObj)    // (from opcode)
+    External (SAT0.NVM2.VLPM, UnknownObj)    // (from opcode)
+    External (SAT0.NVM3.VLPM, UnknownObj)    // (from opcode)
     External (SGGP, UnknownObj)    // (from opcode)
     External (SGMD, UnknownObj)    // (from opcode)
     External (TBTD, MethodObj)    // 1 Arguments (from opcode)
@@ -1320,7 +1319,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         MDEN,   8
     }
 
-    OperationRegion (OGNS, SystemMemory, 0x8AF6AFD8, 0x0C)
+    OperationRegion (OGNS, SystemMemory, 0x8AF6AFD8, 0x0000000C)
     Field (OGNS, AnyAcc, Lock, Preserve)
     {
         OG00,   8, 
@@ -3401,7 +3400,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     }
                 }
 
-                Device (IGPU)
+                Device (GFX0)
                 {
                     Name (_ADR, 0x00020000)  // _ADR: Address
                     Method (_INI, 0, NotSerialized)  // _INI: Initialize
@@ -3427,6 +3426,10 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                     Name (_ADR, 0x00040000)  // _ADR: Address
                 }
+            }
+            Device (PMCR)
+            {
+                Name (_ADR, 0x001F0002)  // macOS expect PMCR for PPMC to load correctly credit syscl
             }
         }
     }
@@ -4504,7 +4507,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         Method (_L6D, 0, Serialized)  // _Lxx: Level-Triggered GPE
         {
             \_SB.PCI0.XHC.GPEH ()
-            \_SB.PCI0.HDEF.GPEH ()
+            \_SB.PCI0.HDAS.GPEH ()
             \_SB.PCI0.XDCI.GPEH ()
         }
     }
@@ -4699,18 +4702,18 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         Device (SBUS)
         {
             Name (_ADR, 0x001F0004)  // _ADR: Address
-            Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
-            {
-                If (PCIC (Arg0))
-                {
-                    Return (PCID (Arg0, Arg1, Arg2, Arg3))
-                }
+//            Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+//            {
+//                If (PCIC (Arg0))
+//                {
+//                    Return (PCID (Arg0, Arg1, Arg2, Arg3))
+//                }
 
-                Return (Buffer (One)
-                {
-                     0x00                                           
-                })
-            }
+//                Return (Buffer (One)
+//                {
+//                     0x00                                           
+//                })
+//            }
         }
     }
 
@@ -5833,9 +5836,9 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                             }
                             Case (0x05)
                             {
-                                If (CondRefOf (\_SB.PCI0.LPCB.EC__.XDAT))
+                                If (CondRefOf (\_SB.PCI0.LPCB.H_EC.XDAT))
                                 {
-                                    If (LEqual (^^LPCB.EC__.XDAT (), One))
+                                    If (LEqual (^^LPCB.H_EC.XDAT (), One))
                                     {
                                         Notify (XDCI, 0x80)
                                     }
@@ -5955,7 +5958,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
     Scope (_SB.PCI0)
     {
-        Device (HDEF)
+        Device (HDAS)
         {
             Name (_ADR, 0x001F0003)  // _ADR: Address
             OperationRegion (HDAR, PCI_Config, Zero, 0x0100)
@@ -5993,9 +5996,9 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 If (LAnd (PMEE, PMES))
                 {
-                    ADBG ("HDEF GPEH")
+                    ADBG ("HDAS GPEH")
                     Store (One, PMES)
-                    Notify (HDEF, 0x02)
+                    Notify (HDAS, 0x02)
                 }
             }
 
@@ -6006,7 +6009,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     VMMH (Zero, One)
                 }
 
-                If (CondRefOf (\_SB.PCI0.HDEF.PS0X))
+                If (CondRefOf (\_SB.PCI0.HDAS.PS0X))
                 {
                     PS0X ()
                 }
@@ -6019,7 +6022,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     VMMH (Zero, Zero)
                 }
 
-                If (CondRefOf (\_SB.PCI0.HDEF.PS3X))
+                If (CondRefOf (\_SB.PCI0.HDAS.PS3X))
                 {
                     PS3X ()
                 }
@@ -6037,10 +6040,10 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             })
             Method (_INI, 0, NotSerialized)  // _INI: Initialize
             {
-                ADBG ("HDEF _INI")
-                CreateQWordField (NBUF, \_SB.PCI0.HDEF._Y14._MIN, NBAS)  // _MIN: Minimum Base Address
-                CreateQWordField (NBUF, \_SB.PCI0.HDEF._Y14._MAX, NMAS)  // _MAX: Maximum Base Address
-                CreateQWordField (NBUF, \_SB.PCI0.HDEF._Y14._LEN, NLEN)  // _LEN: Length
+                ADBG ("HDAS _INI")
+                CreateQWordField (NBUF, \_SB.PCI0.HDAS._Y14._MIN, NBAS)  // _MIN: Minimum Base Address
+                CreateQWordField (NBUF, \_SB.PCI0.HDAS._Y14._MAX, NMAS)  // _MAX: Maximum Base Address
+                CreateQWordField (NBUF, \_SB.PCI0.HDAS._Y14._LEN, NLEN)  // _LEN: Length
                 Store (NHLA, NBAS)
                 Add (NHLA, Subtract (NHLL, One), NMAS)
                 Store (NHLL, NLEN)
@@ -6052,7 +6055,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
-                ADBG ("HDEF _DSM")
+                ADBG ("HDAS _DSM")
                 If (PCIC (Arg0))
                 {
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
@@ -6082,7 +6085,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                         Case (0x03)
                         {
                             ADBG ("_DSM Fun 3 PPMS")
-                            If (CondRefOf (\_SB.PCI0.HDEF.PPMS))
+                            If (CondRefOf (\_SB.PCI0.HDAS.PPMS))
                             {
                                 Return (PPMS (Arg3))
                             }
@@ -12237,7 +12240,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             }
         }
 
-        Device (SATA)
+        Device (SAT0)
         {
             Name (_ADR, 0x00170000)  // _ADR: Address
             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
@@ -12247,7 +12250,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
                 }
 
-                If (CondRefOf (\_SB.PCI0.SATA.SDSM))
+                If (CondRefOf (\_SB.PCI0.SAT0.SDSM))
                 {
                     Return (SDSM (Arg0, Arg1, Arg2, Arg3))
                 }
@@ -14482,8 +14485,8 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (LGreaterEqual (OSYS, 0x07DD))
                 {
-                    Store (TPDS, ^^LPCB.EC.TOHP)
-                    Store (One, ^^LPCB.EC.TPRD)
+                    Store (TPDS, ^^LPCB.EC0.TOHP)
+                    Store (One, ^^LPCB.EC0.TPRD)
                 }
             }
         }
@@ -14582,6 +14585,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                         0x003A
                     }
             })
+            
             Name (_ADR, Zero)  // _ADR: Address
             Method (_HID, 0, NotSerialized)  // _HID: Hardware ID
             {
@@ -15485,7 +15489,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
     Scope (_SB.PCI0)
     {
-        Device (IMEI)
+        Device (HECI)
         {
             Name (_ADR, 0x00160000)  // _ADR: Address
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
@@ -15516,7 +15520,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
     Scope (_SB.PCI0.LPCB)
     {
-        Device (EC)
+        Device (EC0)
         {
             Name (_HID, EisaId ("PNP0C09"))  // _HID: Hardware ID
             Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
@@ -15617,6 +15621,12 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 Else
                 {
                     Store (Zero, CSBM)
+                }
+                //added to turn nvidia/radeon off
+                If (LAnd(LEqual(Arg0,3),LEqual(Arg1,1)))
+                {
+                    External(\_SB.PCI0.RP01.PXSX._OFF, MethodObj)
+                    \_SB.PCI0.RP01.PXSX._OFF()
                 }
             }
 
@@ -15980,17 +15990,17 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     If (LEqual (And (ECTM, 0x08), 0x08))
                     {
                         Store (One, LIDS)
-                        Store (One, ^^^IGPU.CLID)
+                        Store (One, ^^^GFX0.CLID)
                     }
                     ElseIf (LIDT)
                     {
                         Store (Zero, LIDS)
-                        Store (Zero, ^^^IGPU.CLID)
+                        Store (Zero, ^^^GFX0.CLID)
                     }
                     Else
                     {
                         Store (One, LIDS)
-                        Store (One, ^^^IGPU.CLID)
+                        Store (One, ^^^GFX0.CLID)
                     }
                 }
             }
@@ -16264,7 +16274,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 }
                 Else
                 {
-                    Notify (^^^IGPU.DD1F, 0x86)
+                    Notify (^^^GFX0.DD1F, 0x86)
                 }
 
                 If (LEqual (LMAT, One))
@@ -16286,7 +16296,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 }
                 Else
                 {
-                    Notify (^^^IGPU.DD1F, 0x87)
+                    Notify (^^^GFX0.DD1F, 0x87)
                 }
 
                 If (LEqual (LMAT, One))
@@ -16497,7 +16507,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
             Method (HKDS, 0, NotSerialized)
             {
-                ^^^IGPU.GHDS (Zero)
+                ^^^GFX0.GHDS (Zero)
             }
 
             Method (BRXP, 0, NotSerialized)
@@ -16506,7 +16516,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 {
                     Multiply (DerefOf (Index (PNLT, BLVL)), 0x64, Local1)
                     Divide (Local1, 0x0100, , Local2)
-                    ^^^IGPU.AINT (One, Local2)
+                    ^^^GFX0.AINT (One, Local2)
                 }
                 Else
                 {
@@ -17046,15 +17056,48 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (LEqual (OSYS, 0x07E2))
                 {
-                    Store (One, ^^EC.AIRM)
+                    Store (One, ^^EC0.AIRM)
                     Return (0x0F)
                 }
                 Else
                 {
-                    Store (Zero, ^^EC.AIRM)
+                    Store (Zero, ^^EC0.AIRM)
                     Return (Zero)
                 }
             }
+        }
+        Device (DMAC) // macOS desires DMAC credit syscl
+        {
+            Name (_HID, EisaId ("PNP0200"))
+            Name (_CRS, ResourceTemplate ()
+            {
+                IO (Decode16,
+                0x0000,
+                0x0000,
+                0x01,
+                0x20,
+                )
+                IO (Decode16,
+                0x0081,
+                0x0081,
+                0x01,
+                0x11,
+                )
+                IO (Decode16,
+                0x0093,
+                0x0093,
+                0x01,
+                0x0D,
+                )
+                IO (Decode16,
+                0x00C0,
+                0x00C0,
+                0x01,
+                0x20,
+                )
+                DMA (Compatibility, NotBusMaster, Transfer8_16, )
+                {4}
+            })
         }
     }
 
@@ -17448,8 +17491,8 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         If (LEqual (Arg0, 0x04))
         {
             H2OP (0x54)
-            Store (One, \_SB.PCI0.LPCB.EC.FLS4)
-            Store (\_SB.PCI0.LPCB.EC.APBF, \_SB.APS4)
+            Store (One, \_SB.PCI0.LPCB.EC0.FLS4)
+            Store (\_SB.PCI0.LPCB.EC0.APBF, \_SB.APS4)
             Store (One, \_SB.OSS4)
         }
 
@@ -17490,18 +17533,18 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             }
         }
 
-        Store (\_SB.PCI0.LPCB.EC.WLAN, \_SB.PTWL)
-        Store (\_SB.PCI0.LPCB.EC.BLTH, \_SB.PTBT)
-        Store (\_SB.PCI0.LPCB.EC.ST3G, \_SB.PT3G)
-        Store (\_SB.PCI0.LPCB.EC.WLST, \_SB.RDWL)
-        Store (\_SB.PCI0.LPCB.EC.BLTS, \_SB.RDBT)
-        Store (\_SB.PCI0.LPCB.EC.ED3G, \_SB.RD3G)
-        Store (\_SB.PCI0.LPCB.EC.TOHP, \_SB.TPDS)
+        Store (\_SB.PCI0.LPCB.EC0.WLAN, \_SB.PTWL)
+        Store (\_SB.PCI0.LPCB.EC0.BLTH, \_SB.PTBT)
+        Store (\_SB.PCI0.LPCB.EC0.ST3G, \_SB.PT3G)
+        Store (\_SB.PCI0.LPCB.EC0.WLST, \_SB.RDWL)
+        Store (\_SB.PCI0.LPCB.EC0.BLTS, \_SB.RDBT)
+        Store (\_SB.PCI0.LPCB.EC0.ED3G, \_SB.RD3G)
+        Store (\_SB.PCI0.LPCB.EC0.TOHP, \_SB.TPDS)
         If (LOr (LEqual (Arg0, 0x04), LEqual (Arg0, 0x05)))
         {
             If (LGreaterEqual (OSYS, 0x07DD))
             {
-                Store (Zero, \_SB.PCI0.LPCB.EC.TOHP)
+                Store (Zero, \_SB.PCI0.LPCB.EC0.TOHP)
             }
         }
     }
@@ -17533,7 +17576,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         If (LEqual (Arg0, 0x04))
         {
             H2OP (0xE4)
-            Store (\_SB.APS4, \_SB.PCI0.LPCB.EC.APBF)
+            Store (\_SB.APS4, \_SB.PCI0.LPCB.EC0.APBF)
             Notify (\_SB.PWRB, 0x02)
         }
 
@@ -17549,14 +17592,14 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             Store (One, \_SB.SCGE)
         }
 
-        \_SB.PCI0.LPCB.EC.ILID ()
+        \_SB.PCI0.LPCB.EC0.ILID ()
         If (LGreaterEqual (OSYS, 0x07DC))
         {
-            Store (One, \_SB.PCI0.LPCB.EC.OSW8)
+            Store (One, \_SB.PCI0.LPCB.EC0.OSW8)
         }
         Else
         {
-            Store (Zero, \_SB.PCI0.LPCB.EC.OSW8)
+            Store (Zero, \_SB.PCI0.LPCB.EC0.OSW8)
         }
 
         If (LGreaterEqual (OSYS, 0x07DD))
@@ -17712,7 +17755,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 Notify (\_SB.PCI0.RP20, Zero)
             }
 
-            \_SB.PCI0.LPCB.EC.SCTB ()
+            \_SB.PCI0.LPCB.EC0.SCTB ()
         }
 
         If (LOr (LEqual (Arg0, 0x03), LEqual (Arg0, 0x04))){}
@@ -17721,15 +17764,15 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             Signal (WFEV)
         }
 
-        Store (\_SB.PTWL, \_SB.PCI0.LPCB.EC.WLAN)
-        Store (\_SB.PTBT, \_SB.PCI0.LPCB.EC.BLTH)
-        Store (\_SB.PT3G, \_SB.PCI0.LPCB.EC.ST3G)
+        Store (\_SB.PTWL, \_SB.PCI0.LPCB.EC0.WLAN)
+        Store (\_SB.PTBT, \_SB.PCI0.LPCB.EC0.BLTH)
+        Store (\_SB.PT3G, \_SB.PCI0.LPCB.EC0.ST3G)
         Sleep (0x0A)
-        Store (\_SB.RDWL, \_SB.PCI0.LPCB.EC.WLST)
-        Store (\_SB.RDBT, \_SB.PCI0.LPCB.EC.BLTS)
-        Store (\_SB.RD3G, \_SB.PCI0.LPCB.EC.ED3G)
-        Store (One, \_SB.PCI0.LPCB.EC.CPLE)
-        Store (\_SB.TPDS, \_SB.PCI0.LPCB.EC.TOHP)
+        Store (\_SB.RDWL, \_SB.PCI0.LPCB.EC0.WLST)
+        Store (\_SB.RDBT, \_SB.PCI0.LPCB.EC0.BLTS)
+        Store (\_SB.RD3G, \_SB.PCI0.LPCB.EC0.ED3G)
+        Store (One, \_SB.PCI0.LPCB.EC0.CPLE)
+        Store (\_SB.TPDS, \_SB.PCI0.LPCB.EC0.TOHP)
         Return (Package (0x02)
         {
             Zero, 
@@ -18080,7 +18123,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     Store (0x07DD, OSYS)
                 }
 
-                If (LOr (_OSI ("Darwin"), _OSI ("Windows 2015")))
+                If(LOr(_OSI("Darwin"),_OSI("Windows 2015")))
                 {
                     Store (0x07DF, OSYS)
                 }
@@ -18641,12 +18684,12 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 If (LEqual (DCKE, One))
                 {
                     ADBG ("NFYG.DCKE")
-                    Notify (\_SB.PCI0.IGPU, 0x81)
+                    Notify (\_SB.PCI0.GFX0, 0x81)
                 }
                 ElseIf (LEqual (SUDK, One))
                 {
                     ADBG ("NFYG.SUDK")
-                    Notify (\_SB.PCI0.IGPU, 0x81)
+                    Notify (\_SB.PCI0.GFX0, 0x81)
                 }
             }
         }
@@ -20408,7 +20451,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
     {
         If (LEqual (And (DIDX, 0x0F00), 0x0400))
         {
-            Notify (\_SB.PCI0.IGPU.DD1F, Arg0)
+            Notify (\_SB.PCI0.GFX0.DD1F, Arg0)
         }
     }
 
@@ -21155,9 +21198,9 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
         Method (_L66, 0, NotSerialized)  // _Lxx: Level-Triggered GPE
         {
-            If (LAnd (\_SB.PCI0.IGPU.GSSE, LNot (GSMI)))
+            If (LAnd (\_SB.PCI0.GFX0.GSSE, LNot (GSMI)))
             {
-                \_SB.PCI0.IGPU.GSCI ()
+                \_SB.PCI0.GFX0.GSCI ()
             }
         }
 
@@ -21191,7 +21234,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         }
     }
 
-    Scope (_SB.PCI0.IGPU)
+    Scope (_SB.PCI0.GFX0)
     {
         Method (_DEP, 0, NotSerialized)  // _DEP: Dependencies
         {
@@ -21209,7 +21252,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         }
     }
 
-    Scope (_SB.PCI0.SATA)
+    Scope (_SB.PCI0.SAT0)
     {
         Method (_DEP, 0, NotSerialized)  // _DEP: Dependencies
         {
@@ -21227,7 +21270,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         }
     }
 
-    Scope (_SB.PCI0.SATA.VOL0)
+    Scope (_SB.PCI0.SAT0.VOL0)
     {
         Method (_DEP, 0, NotSerialized)  // _DEP: Dependencies
         {
@@ -21352,7 +21395,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
         }
     }
 
-    Scope (_SB.PCI0.HDEF)
+    Scope (_SB.PCI0.HDAS)
     {
         Method (_DEP, 0, NotSerialized)  // _DEP: Dependencies
         {
@@ -22825,7 +22868,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.IGPU", 
+                    "\\_SB.PCI0.GFX0", 
                     One, 
                     Package (0x02)
                     {
@@ -22840,7 +22883,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA", 
+                    "\\_SB.PCI0.SAT0", 
                     Zero, 
                     Package (0x02)
                     {
@@ -22931,7 +22974,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.HDEF", 
+                    "\\_SB.PCI0.HDAS", 
                     One, 
                     Package (0x02)
                     {
@@ -23416,7 +23459,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.PRT0", 
+                    "\\_SB.PCI0.SAT0.PRT0", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23431,7 +23474,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.PRT1", 
+                    "\\_SB.PCI0.SAT0.PRT1", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23446,7 +23489,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.PRT2", 
+                    "\\_SB.PCI0.SAT0.PRT2", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23461,7 +23504,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.PRT3", 
+                    "\\_SB.PCI0.SAT0.PRT3", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23476,7 +23519,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.PRT4", 
+                    "\\_SB.PCI0.SAT0.PRT4", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23491,7 +23534,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.PRT5", 
+                    "\\_SB.PCI0.SAT0.PRT5", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23506,7 +23549,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.NVM1", 
+                    "\\_SB.PCI0.SAT0.NVM1", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23521,7 +23564,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.NVM2", 
+                    "\\_SB.PCI0.SAT0.NVM2", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23536,7 +23579,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.NVM3", 
+                    "\\_SB.PCI0.SAT0.NVM3", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23551,7 +23594,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x03)
                 {
-                    "\\_SB.PCI0.SATA.VOL0", 
+                    "\\_SB.PCI0.SAT0.VOL0", 
                     Zero, 
                     Package (0x02)
                     {
@@ -23569,7 +23612,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 Package (0x02)
                 {
-                    "\\_SB.PCI0.SATA", 
+                    "\\_SB.PCI0.SAT0", 
                     Package (0x01)
                     {
                         Package (0x03)
@@ -23597,7 +23640,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x02)
                 {
-                    "\\_SB.PCI0.SATA.PRT0", 
+                    "\\_SB.PCI0.SAT0.PRT0", 
                     Package (0x01)
                     {
                         Package (0x03)
@@ -23625,7 +23668,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x02)
                 {
-                    "\\_SB.PCI0.SATA.PRT1", 
+                    "\\_SB.PCI0.SAT0.PRT1", 
                     Package (0x01)
                     {
                         Package (0x03)
@@ -23653,7 +23696,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x02)
                 {
-                    "\\_SB.PCI0.SATA.PRT2", 
+                    "\\_SB.PCI0.SAT0.PRT2", 
                     Package (0x01)
                     {
                         Package (0x03)
@@ -23681,7 +23724,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x02)
                 {
-                    "\\_SB.PCI0.SATA.PRT3", 
+                    "\\_SB.PCI0.SAT0.PRT3", 
                     Package (0x01)
                     {
                         Package (0x03)
@@ -23709,7 +23752,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
                 Package (0x02)
                 {
-                    "\\_SB.PCI0.SATA.VOL0", 
+                    "\\_SB.PCI0.SAT0.VOL0", 
                     Package (0x01)
                     {
                         Package (0x03)
@@ -24651,7 +24694,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
     Name (BUFN, Zero)
     Name (MBUF, Buffer (0x1000){})
-    OperationRegion (MDBG, SystemMemory, 0x8AF57018, 0x1004)
+    OperationRegion (MDBG, SystemMemory, 0x8AF57018, 0x00001004)
     Field (MDBG, AnyAcc, Lock, Preserve)
     {
         MDG0,   32768
@@ -24949,7 +24992,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 }
                 ElseIf (ECOK)
                 {
-                    Store (^^PCI0.LPCB.EC.ACDF, ACST)
+                    Store (^^PCI0.LPCB.EC0.ACDF, ACST)
                 }
                 Else
                 {
@@ -24968,7 +25011,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 }
                 ElseIf (ECOK)
                 {
-                    Store (^^PCI0.LPCB.EC.ACDF, ACST)
+                    Store (^^PCI0.LPCB.EC0.ACDF, ACST)
                 }
                 Else
                 {
@@ -25070,7 +25113,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (ECOK)
                 {
-                    If (^^PCI0.LPCB.EC.MBTS)
+                    If (^^PCI0.LPCB.EC0.MBTS)
                     {
                         Return (0x1F)
                     }
@@ -25090,7 +25133,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 IVBI ()
                 If (ECOK)
                 {
-                    If (^^PCI0.LPCB.EC.MBTS)
+                    If (^^PCI0.LPCB.EC0.MBTS)
                     {
                         UBIF ()
                     }
@@ -25104,7 +25147,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 IVBX ()
                 If (ECOK)
                 {
-                    If (^^PCI0.LPCB.EC.MBTS)
+                    If (^^PCI0.LPCB.EC0.MBTS)
                     {
                         UBIX ()
                     }
@@ -25129,14 +25172,14 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (ECOK)
                 {
-                    Acquire (^^PCI0.LPCB.EC.MUT1, 0xFFFF)
-                    Store (^^PCI0.LPCB.EC.BTDC, Local0)
-                    Store (^^PCI0.LPCB.EC.LFCC, Local1)
-                    Store (^^PCI0.LPCB.EC.BTDV, Local2)
-                    Store (^^PCI0.LPCB.EC.BTMD, Local3)
-                    Store (^^PCI0.LPCB.EC.BTMN, Local4)
-                    Store (^^PCI0.LPCB.EC.BTSN, Local5)
-                    Release (^^PCI0.LPCB.EC.MUT1)
+                    Acquire (^^PCI0.LPCB.EC0.MUT1, 0xFFFF)
+                    Store (^^PCI0.LPCB.EC0.BTDC, Local0)
+                    Store (^^PCI0.LPCB.EC0.LFCC, Local1)
+                    Store (^^PCI0.LPCB.EC0.BTDV, Local2)
+                    Store (^^PCI0.LPCB.EC0.BTMD, Local3)
+                    Store (^^PCI0.LPCB.EC0.BTMN, Local4)
+                    Store (^^PCI0.LPCB.EC0.BTSN, Local5)
+                    Release (^^PCI0.LPCB.EC0.MUT1)
                     Store (Local0, Index (PBIF, One))
                     Store (Local1, Index (PBIF, 0x02))
                     Store (Local2, Index (PBIF, 0x04))
@@ -25254,14 +25297,14 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (ECOK)
                 {
-                    Acquire (^^PCI0.LPCB.EC.MUT1, 0xFFFF)
-                    Store (^^PCI0.LPCB.EC.BTDC, Local0)
-                    Store (^^PCI0.LPCB.EC.LFCC, Local1)
-                    Store (^^PCI0.LPCB.EC.BTDV, Local2)
-                    Store (^^PCI0.LPCB.EC.BTMD, Local3)
-                    Store (^^PCI0.LPCB.EC.BTMN, Local4)
-                    Store (^^PCI0.LPCB.EC.BTSN, Local5)
-                    Release (^^PCI0.LPCB.EC.MUT1)
+                    Acquire (^^PCI0.LPCB.EC0.MUT1, 0xFFFF)
+                    Store (^^PCI0.LPCB.EC0.BTDC, Local0)
+                    Store (^^PCI0.LPCB.EC0.LFCC, Local1)
+                    Store (^^PCI0.LPCB.EC0.BTDV, Local2)
+                    Store (^^PCI0.LPCB.EC0.BTMD, Local3)
+                    Store (^^PCI0.LPCB.EC0.BTMN, Local4)
+                    Store (^^PCI0.LPCB.EC0.BTSN, Local5)
+                    Release (^^PCI0.LPCB.EC0.MUT1)
                     Store (Local0, Index (PBIX, 0x02))
                     Store (Local1, Index (PBIX, 0x03))
                     Store (Local2, Index (PBIX, 0x05))
@@ -25369,7 +25412,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (ECOK)
                 {
-                    Store (^^PCI0.LPCB.EC.MBTS, Local0)
+                    Store (^^PCI0.LPCB.EC0.MBTS, Local0)
                     If (LEqual (Local0, Zero))
                     {
                         Store (Zero, Index (PBST, Zero))
@@ -25380,20 +25423,20 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                         Return (PBST)
                     }
 
-                    Store (^^PCI0.LPCB.EC.MBRM, Local1)
+                    Store (^^PCI0.LPCB.EC0.MBRM, Local1)
                     Store (Local1, Index (PBST, 0x02))
                     Store (Local1, RCAP)
-                    Store (^^PCI0.LPCB.EC.MCUR, Local3)
+                    Store (^^PCI0.LPCB.EC0.MCUR, Local3)
                     Store (POSW (Local3), Index (PBST, One))
-                    If (^^PCI0.LPCB.EC.MFCF)
+                    If (^^PCI0.LPCB.EC0.MFCF)
                     {
                         Store (Zero, Index (PBST, Zero))
                     }
-                    ElseIf (^^PCI0.LPCB.EC.MBPC)
+                    ElseIf (^^PCI0.LPCB.EC0.MBPC)
                     {
                         Store (0x02, Index (PBST, Zero))
                     }
-                    ElseIf (^^PCI0.LPCB.EC.MBDX)
+                    ElseIf (^^PCI0.LPCB.EC0.MBDX)
                     {
                         Store (One, Index (PBST, Zero))
                     }
@@ -25402,7 +25445,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                         Store (Zero, Index (PBST, Zero))
                     }
 
-                    Store (^^PCI0.LPCB.EC.MBVG, Index (PBST, 0x03))
+                    Store (^^PCI0.LPCB.EC0.MBVG, Index (PBST, 0x03))
                 }
                 Else
                 {
@@ -25425,12 +25468,12 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             Name (_HID, EisaId ("PNP0C0D"))  // _HID: Hardware ID
             Method (_LID, 0, NotSerialized)  // _LID: Lid Status
             {
-                If (LEqual (And (^^PCI0.LPCB.EC.ECTM, 0x08), 0x08))
+                If (LEqual (And (^^PCI0.LPCB.EC0.ECTM, 0x08), 0x08))
                 {
                     Return (One)
                 }
 
-                If (^^PCI0.LPCB.EC.LIDT)
+                If (^^PCI0.LPCB.EC0.LIDT)
                 {
                     Return (Zero)
                 }
@@ -25450,7 +25493,7 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             {
                 If (\_SB.ECOK)
                 {
-                    Store (\_SB.PCI0.LPCB.EC.CTMP, Local0)
+                    Store (\_SB.PCI0.LPCB.EC0.CTMP, Local0)
                     Return (Add (Multiply (Local0, 0x0A), 0x0AAC))
                 }
                 Else
@@ -25461,23 +25504,23 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
             Method (_PSV, 0, NotSerialized)  // _PSV: Passive Temperature
             {
-                If (LEqual (\_SB.PCI0.LPCB.EC.TJMX, Zero))
+                If (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, Zero))
                 {
                     Return (0x0F5C)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, One))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, One))
                 {
                     Return (0x0F5C)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, 0x02))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, 0x02))
                 {
                     Return (0x0F5C)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, 0x03))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, 0x03))
                 {
                     Return (0x0F5C)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, 0x04))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, 0x04))
                 {
                     Return (0x0F5C)
                 }
@@ -25496,23 +25539,23 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
             Name (_TC2, 0x03)  // _TC2: Thermal Constant 2
             Method (XCRT, 0, NotSerialized)
             {
-                If (LEqual (\_SB.PCI0.LPCB.EC.TJMX, Zero))
+                If (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, Zero))
                 {
                     Return (0x0DFE)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, One))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, One))
                 {
                     Return (0x0E30)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, 0x02))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, 0x02))
                 {
                     Return (0x0E80)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, 0x03))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, 0x03))
                 {
                     Return (0x0EC6)
                 }
-                ElseIf (LEqual (\_SB.PCI0.LPCB.EC.TJMX, 0x04))
+                ElseIf (LEqual (\_SB.PCI0.LPCB.EC0.TJMX, 0x04))
                 {
                     Return (0x0DCC)
                 }
@@ -25551,27 +25594,27 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 Store (BCL8, Index (PNLT, 0x08))
                 Store (BCL9, Index (PNLT, 0x09))
                 Store (BLVA, Index (PNLT, 0x0A))
-                Store (Or (BCL0, 0x8000), ^IGPU.BLM0)
-                Store (Or (BCL1, 0x8A00), ^IGPU.BLM1)
-                Store (Or (BCL2, 0x9400), ^IGPU.BLM2)
-                Store (Or (BCL3, 0x9E00), ^IGPU.BLM3)
-                Store (Or (BCL4, 0xA800), ^IGPU.BLM4)
-                Store (Or (BCL5, 0xB200), ^IGPU.BLM5)
-                Store (Or (BCL6, 0xBC00), ^IGPU.BLM6)
-                Store (Or (BCL7, 0xC600), ^IGPU.BLM7)
-                Store (Or (BCL8, 0xD000), ^IGPU.BLM8)
-                Store (Or (BCL9, 0xDA00), ^IGPU.BLM9)
-                Store (Or (BLVA, 0xE400), ^IGPU.BLMA)
+                Store (Or (BCL0, 0x8000), ^GFX0.BLM0)
+                Store (Or (BCL1, 0x8A00), ^GFX0.BLM1)
+                Store (Or (BCL2, 0x9400), ^GFX0.BLM2)
+                Store (Or (BCL3, 0x9E00), ^GFX0.BLM3)
+                Store (Or (BCL4, 0xA800), ^GFX0.BLM4)
+                Store (Or (BCL5, 0xB200), ^GFX0.BLM5)
+                Store (Or (BCL6, 0xBC00), ^GFX0.BLM6)
+                Store (Or (BCL7, 0xC600), ^GFX0.BLM7)
+                Store (Or (BCL8, 0xD000), ^GFX0.BLM8)
+                Store (Or (BCL9, 0xDA00), ^GFX0.BLM9)
+                Store (Or (BLVA, 0xE400), ^GFX0.BLMA)
                 If (LEqual (BBTP, One))
                 {
-                    Store (Or (BL86, 0xB200), ^IGPU.BLM5)
-                    Store (Or (BL87, 0xBC00), ^IGPU.BLM6)
-                    Store (Or (BL88, 0xC600), ^IGPU.BLM7)
-                    Store (Or (BL89, 0xD000), ^IGPU.BLM8)
-                    Store (Or (BL8A, 0xDA00), ^IGPU.BLM9)
+                    Store (Or (BL86, 0xB200), ^GFX0.BLM5)
+                    Store (Or (BL87, 0xBC00), ^GFX0.BLM6)
+                    Store (Or (BL88, 0xC600), ^GFX0.BLM7)
+                    Store (Or (BL89, 0xD000), ^GFX0.BLM8)
+                    Store (Or (BL8A, 0xDA00), ^GFX0.BLM9)
                 }
 
-                Store (Zero, ^IGPU.BLMX)
+                Store (Zero, ^GFX0.BLMX)
             }
             Else
             {
@@ -25585,18 +25628,18 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                 Store (BCL7, Index (PNL7, 0x07))
                 Store (BCL8, Index (PNL7, 0x08))
                 Store (BCL9, Index (PNL7, 0x09))
-                Store (Or (BCL0, 0x8A00), ^IGPU.BLM0)
-                Store (Or (BCL1, 0x9400), ^IGPU.BLM1)
-                Store (Or (BCL2, 0x9E00), ^IGPU.BLM2)
-                Store (Or (BCL3, 0xA800), ^IGPU.BLM3)
-                Store (Or (BCL4, 0xB200), ^IGPU.BLM4)
-                Store (Or (BCL5, 0xBC00), ^IGPU.BLM5)
-                Store (Or (BCL6, 0xC600), ^IGPU.BLM6)
-                Store (Or (BCL7, 0xD000), ^IGPU.BLM7)
-                Store (Or (BCL8, 0xDA00), ^IGPU.BLM8)
-                Store (Or (BCL9, 0xE400), ^IGPU.BLM9)
-                Store (Zero, ^IGPU.BLMA)
-                Store (Zero, ^IGPU.BLMX)
+                Store (Or (BCL0, 0x8A00), ^GFX0.BLM0)
+                Store (Or (BCL1, 0x9400), ^GFX0.BLM1)
+                Store (Or (BCL2, 0x9E00), ^GFX0.BLM2)
+                Store (Or (BCL3, 0xA800), ^GFX0.BLM3)
+                Store (Or (BCL4, 0xB200), ^GFX0.BLM4)
+                Store (Or (BCL5, 0xBC00), ^GFX0.BLM5)
+                Store (Or (BCL6, 0xC600), ^GFX0.BLM6)
+                Store (Or (BCL7, 0xD000), ^GFX0.BLM7)
+                Store (Or (BCL8, 0xDA00), ^GFX0.BLM8)
+                Store (Or (BCL9, 0xE400), ^GFX0.BLM9)
+                Store (Zero, ^GFX0.BLMA)
+                Store (Zero, ^GFX0.BLMX)
             }
         }
     }

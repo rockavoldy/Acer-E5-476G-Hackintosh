@@ -23,11 +23,11 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
         Name(RMCF, Package()
         {
             // Power Properties
-            "AppleBusPowerController", Package()
-            {
-                "kUSBSleepPortCurrentLimit", 3000,
-                "kUSBWakePortCurrentLimit", 3000,
-            },
+//            "AppleBusPowerController", Package()
+//            {
+//                "kUSBSleepPortCurrentLimit", 3000,
+//                "kUSBWakePortCurrentLimit", 3000,
+//            },
             // patching USB Port
             "8086_9dxx", Package()  // examples: 0x9d2f, 0x9ded
             {
