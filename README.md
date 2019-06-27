@@ -16,7 +16,7 @@
 - Resolution: 1366x768@60Hz
 - Clover: Clover v2.4 r4920
 - OS Version: OS X Mojave 10.14.5
-- SMBIOS: MacBook Pro 13" Early 2016 (MacBookPro13,1)
+- SMBIOS: MacBook Air 13" Early 2015 (MacBookAir7,2)
 
 ## What's Work?
 - Power Management, idle @700-900MHz
