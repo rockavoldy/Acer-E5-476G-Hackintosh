@@ -8,11 +8,19 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-XOSI</string>
+				<string>SSDT-OSYS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-OSYS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PLUG</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -40,14 +48,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PLUG</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-PNLF</string>
 				<key>Enabled</key>
 				<true/>
@@ -72,19 +72,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PS2KBD</string>
+				<string>SSDT-PS2K</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PS2KBD.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-FREQ</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-FREQ.aml</string>
+				<string>SSDT-PS2K.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -128,41 +120,6 @@
 		</array>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>_OSI to XOSI</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				X09TSQ==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				WE9TSQ==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>GPI0._STA to XSTA</string>
@@ -310,7 +267,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,29,2/0,0</string>
 				<key>brcmfx-country</key>
-				<string>#a</string>
+				<string>ID</string>
 				<key>device_type</key>
 				<string>Airport Extreme</string>
 				<key>model</key>
@@ -526,6 +483,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>CPUFriendDataProvider.kext</string>
+				<key>Comment</key>
+				<string>Power Management</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>EFICheckDisabler.kext</string>
 				<key>Comment</key>
 				<string>EFI Check Disabler</string>
@@ -716,6 +689,22 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>BT4LEContinuityFixup.kext</string>
+				<key>Comment</key>
+				<string>Bluetooth</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BT4LEContinuityFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -735,7 +724,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleIntelLpssI2C</string>
 				<key>MaxKernel</key>
@@ -931,7 +920,7 @@
 			<key>ConsoleMode</key>
 			<string>Max</string>
 			<key>HibernateMode</key>
-			<string>None</string>
+			<string>Auto</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
@@ -939,7 +928,7 @@
 			<key>Resolution</key>
 			<string>Max</string>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>Timeout</key>
 			<integer>2</integer>
 			<key>UsePicker</key>
@@ -954,29 +943,31 @@
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
 			<key>Target</key>
-			<integer>75</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
 			<dict>
 				<key>Arguments</key>
-				<string></string>
+				<string>root=PARTUUID=97B99810-F432-294C-B3BB-AEF3489DE2B2 rw resume=PARTUUID=97B99810-F432-294C-B3BB-AEF3489DE2B2 initrd=\linux\initramfs-linux.img initrd=\linux\intel-ucode.img</string>
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Name</key>
-				<string>Arch</string>
+				<string>Arch Linux</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0x0,0x0)/HD(1,GPT,9F98669A-3557-4CDE-8882-5605DAD35B9F,0x28,0x64000)/\EFI\BOOT\BOOTx64.efi</string>
+				<string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0x0,0x0)/HD(1,GPT,9F98669A-3557-4CDE-8882-5605DAD35B9F,0x28,0x64000)/\linux\vmlinuz-linux</string>
 			</dict>
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>#ScanPolicy</key>
+			<integer>2687235</integer>
 			<key>AllowNvramReset</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
-			<integer>6</integer>
+			<integer>2</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>RequireSignature</key>
@@ -984,7 +975,7 @@
 			<key>RequireVault</key>
 			<false/>
 			<key>ScanPolicy</key>
-			<real>2687747</real>
+			<integer>0</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -994,7 +985,7 @@
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
@@ -1087,19 +1078,19 @@
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C17614802QXHMHKJC</string>
+			<string>00000000000000</string>
 			<key>ROM</key>
 			<data>
-			2MSXNKbx
+			AAAAAAAA
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro13,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C17RJ0EKGVC1</string>
+			<string>000000000000</string>
 			<key>SystemUUID</key>
-			<string>6A2AD860-20DB-4E99-9C28-8AD22B3D94BB</string>
+			<string>0</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1169,7 +1160,7 @@
 			<key>AvoidHighAlloc</key>
 			<false/>
 			<key>ClearScreenOnModeSwitch</key>
-			<true/>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
