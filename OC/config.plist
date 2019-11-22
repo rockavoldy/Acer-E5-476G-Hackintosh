@@ -241,7 +241,7 @@
 			<key>DiscardHibernateMap</key>
 			<false/>
 			<key>EnableSafeModeSlide</key>
-			<true/>
+			<false/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
 			<key>ForceExitBootServices</key>
@@ -918,15 +918,15 @@
 			<key>ConsoleBehaviourUi</key>
 			<string>ForceText</string>
 			<key>ConsoleMode</key>
-			<string>Max</string>
+			<string></string>
 			<key>HibernateMode</key>
-			<string>Auto</string>
+			<string>None</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>Resolution</key>
-			<string>Max</string>
+			<string>1366x768@60</string>
 			<key>ShowPicker</key>
 			<false/>
 			<key>Timeout</key>
@@ -1160,13 +1160,13 @@
 			<key>AvoidHighAlloc</key>
 			<false/>
 			<key>ClearScreenOnModeSwitch</key>
-			<false/>
+			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<true/>
 			<key>IgnoreTextInGraphics</key>
-			<false/>
+			<true/>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectOnResChange</key>
@@ -1178,7 +1178,7 @@
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>SanitiseClearScreen</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 </dict>
