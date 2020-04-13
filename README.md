@@ -12,8 +12,8 @@
 - Touchpad: ELAN0501 I2C
 - Keyboard: PS2 Keyboard
 - Resolution: 1366x768@60Hz
-- Bootloader: OpenCore 0.5.3 Release 
-- OS Version: OS X Catalina 10.15.2 (19C57)
+- Bootloader: OpenCore 0.5.7
+- OS Version: macOS 10.15.4 Catalina (19E287)
 - SMBIOS: MacBookPro13,1
 
 ## What's Work?
@@ -29,7 +29,7 @@
 - Keyboard
 - USB 3.0
 - VGA Port
-- HDMI Port
+- HDMI Port + HDMI Audio out
 - Speaker + Combo Jack Headphone
 
 ## What's Not Work?
@@ -37,6 +37,7 @@
 - Combo Jack Microphone
 - SD Card reader (Realtek devices with no support)
 - Facetime, iMessage (need to call Apple Support)
+- DRM broken, only can play FairPlay 1.x
 
 ## Credit
 - Acidanthera
