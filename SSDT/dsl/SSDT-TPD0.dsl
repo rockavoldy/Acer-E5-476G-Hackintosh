@@ -26,47 +26,12 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "TPD0", 0x00000000)
     {
         Device (TPD0)
         {
-            Method (_HID, 0, NotSerialized)  // _HID: Hardware ID
-            {
-                Return ("ELAN0501")
-            }
-
+            Name (_HID, "ELAN0501")  // _HID: Hardware ID
             Name (_CID, "PNP0C50" /* HID Protocol Device (I2C bus) */)  // _CID: Compatible ID
             Name (_UID, One)  // _UID: Unique ID
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If (LEqual (Arg0, ToUUID ("3cdff6f7-4267-4555-ad05-b30a3d8938de") /* HID I2C Device */))
-                {
-                    If (LEqual (Arg2, Zero))
-                    {
-                        If (LEqual (Arg1, One))
-                        {
-                            Return (Buffer (One)
-                            {
-                                 0x03                                             // .
-                            })
-                        }
-                        Else
-                        {
-                            Return (Buffer (One)
-                            {
-                                 0x00                                             // .
-                            })
-                        }
-                    }
-
-                    If (LEqual (Arg2, One))
-                    {
-                        Return (One)
-                    }
-                }
-                Else
-                {
-                    Return (Buffer (One)
-                    {
-                         0x00                                             // .
-                    })
-                }
+                Return (One)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
