@@ -45,6 +45,9 @@
 - Facetime, iMessage (need to call Apple Support, seems like my Apple ID has been blocked for this device for attempt at my first build)
 - DRM broken, only can play FairPlay 1.x
 
+## Images
+![BCM94360CS2](./images/bcm94360cs2-photo.webp)
+
 ## Credit
 
 - Acidanthera team
