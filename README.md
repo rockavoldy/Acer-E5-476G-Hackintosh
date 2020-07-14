@@ -46,6 +46,8 @@
 - DRM broken, only can play FairPlay 1.x
 
 ## Images
+
+This is how BCM94360CS2 installed to the board.
 ![BCM94360CS2](./images/bcm94360cs2-photo.webp)
 
 ## Credit
