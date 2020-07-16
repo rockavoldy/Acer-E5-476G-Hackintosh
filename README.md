@@ -17,7 +17,7 @@
 - Keyboard: PS2 Keyboard
 - Resolution: 1366x768@60Hz
 - Bootloader: OpenCore 0.5.9 RELEASE
-- OS Version: macOS 10.15.5 Catalina (19F101)
+- OS Version: macOS 10.15.6 Catalina (19G73)
 - SMBIOS: MacBookPro13,1
 
 ## Working
