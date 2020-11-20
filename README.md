@@ -12,11 +12,11 @@
 - Audio: Realtek ALC255
 - Storage: Samsung 860 EVO 500GB
 - Ethernet Card: Realtek RTL8111
-- Wireless Card: BCM94360CS2 (12+6 pin to M.2 A/E Key)
+- Wireless Card: Intel 3168NGW
 - Touchpad: ELAN0501 I2C
 - Keyboard: PS2 Keyboard
 - Resolution: 1366x768@60Hz
-- Bootloader: OpenCore 0.5.9 RELEASE
+- Bootloader: OpenCore 0.6.3 RELEASE
 - OS Version: macOS 10.15.6 Catalina (19G73)
 - SMBIOS: MacBookPro13,1
 
@@ -28,8 +28,6 @@
 - Brightness
 - Battery up to 6 hours
 - Ethernet RTL8111
-- Wireless Out-Of-the-Box
-- Continuity, Global Clipboard, Airdrop, Instant Hotspot
 - Trackpad Full gestures
 - Keyboard
 - USB 3.0
