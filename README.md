@@ -25,6 +25,7 @@
 - Power Management, idle @500-800MHz
 - Shutdown, Restart, Sleep
 - QE/CI Intel HD Graphics 520
+- Intel Wireless
 - Brightness
 - Battery up to 6 hours
 - Ethernet RTL8111
@@ -52,6 +53,7 @@ This is how BCM94360CS2 installed to the board.
 
 - Acidanthera team
 - Alexandred and VoodooI2C team
+- OpenIntelWireless team
 - RehabMan
 - Andres
 - And many other people in hackintosh community
