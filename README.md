@@ -17,7 +17,7 @@
 - Keyboard: PS2 Keyboard
 - Resolution: 1366x768@60Hz
 - Bootloader: OpenCore 0.6.3 RELEASE
-- OS Version: macOS 10.15.6 Catalina (19G73)
+- OS Version: macOS 10.15.7 Catalina (19H15)
 - SMBIOS: MacBookPro13,1
 
 ## Working
@@ -43,6 +43,9 @@
 - SD Card reader (USB Interface, not supported yet)
 - Facetime, iMessage (need to call Apple Support, seems like my Apple ID has been blocked for this device for attempt at my first build)
 - DRM broken, only can play FairPlay 1.x
+
+## Notes
+- Remap Brightness keys to Fn+PrtScr & Fn+Pause Break. And Volume keys to Fn+F11 (NumLock) & Fn+F12 (ScrLock). And i am also disable Fn+Arrow key, you can see SSDT-PS2K to change this if you don’t like my mapping.
 
 ## Images
 
