@@ -46,6 +46,7 @@
 
 ## Notes
 - Remap Brightness keys to Fn+PrtScr & Fn+Pause Break. And Volume keys to Fn+F11 (NumLock) & Fn+F12 (ScrLock). And i am also disable Fn+Arrow key, you can see SSDT-PS2K to change this if you don’t like my mapping.
+- Mine have disabled CFG Lock, so Kernel patch for CfgLock in config.plist have been disabled. Enable Kernel patch for CfgLock if yours not disabled yet. I had write the guide in my blog (Bahasa Indonesia) [Disable CFG Lock pada Acer E5-476G](https://blog.akhmad.id/disable-cfg-lock-pada-acer-e5-476-g/).
 
 ## Images
 
