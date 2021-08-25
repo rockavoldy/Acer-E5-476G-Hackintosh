@@ -1153,17 +1153,17 @@
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>MLB</key>
-			<string>C17647303J9HMHKJA</string>
+			<string></string>
 			<key>ROM</key>
-			<data>YPZ3qoeH</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro13,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C17SQ0H5GVC1</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>28AEC771-1E92-4EE8-9B7C-6C799217FDD0</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
