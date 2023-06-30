@@ -1,7 +1,6 @@
 # Acer E5-476G
 
-[![ko-fi](https://img.shields.io/badge/Ko--fi-rockavoldy-brightgreen?style=flat&logo=ko-fi)](https://ko-fi.com/rockavoldy)
-[![trakteer.id](https://img.shields.io/badge/Trakteer.id-akhmad.id-brightgreen?style=flat&logo=ko-fi)](https://trakteer.id/akhmad.id)
+Abandoned since i don't have the device anymore. Use this to learn about hackintosh, and maybe for an archive when intel mac is not supported anymore.
 
 ## Specifications
 
